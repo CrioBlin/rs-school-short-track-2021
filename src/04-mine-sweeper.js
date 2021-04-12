@@ -23,6 +23,30 @@
  */
 function minesweeper(/* matrix */) {
   throw new Error('Not implemented');
+  // const newArr = [];
+
+  // for (let i = 0; i < matrix.length; i++) {
+  //   const cacheArr = [];
+  //   for (let j = 0; j < matrix[0].length; j++) {
+  //     cacheArr.push(0);
+  //   }
+  //   newArr.push(cacheArr);
+  // }
+
+  // for (let i = 0; i < matrix.length; i++) {
+  //   for (let j = 0; j < matrix[0].length; j++) {
+  //     if (matrix[i][j] === true) {
+  //       newArr[i][j]++;
+  //     } else {
+  //       newArr[i][j]++
+  //     }
+  //     // } else if (matrix[i][j+1] === true || matrix[i][j - 1] === true) {
+  //     //   newArr[i][j]++;
+  //     // }
+  //   }
+  // }
+
+  // return newArr;
 }
 
 module.exports = minesweeper;
