@@ -17,30 +17,18 @@ function renameFiles(names) {
   // throw new Error('Not implemented');
   const result = [...names];
 
-  console.log('BEFORE', result);
-
-  // for (let i = 0; i < result.length; i++) {
-  //   let counter = 1;
-  //   for (let j = 1; j < result.length; j++) {
-  //     if (result[i] === result[j]) {
-  //       result[j] = `${result[j]}(${counter})`;
-  //       counter++;
-  //     }
-  //   }
-  // }
-
   let index = 0;
   while (index < result.length) {
     let counter = 1;
-    for (let i = 0; i < result.length; i++) {
+    for (let i = index + 1; i < result.length; i++) {
       if (result[index] === result[i]) {
         result[i] = `${result[i]}(${counter})`;
         counter++;
       }
     }
+    index++;
   }
 
-  console.log('AFTER', result);
   return result;
 }
 
